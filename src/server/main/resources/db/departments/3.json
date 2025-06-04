@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "name": "معارف",
+  "professorsId": [5],
+  "studentsId": [],
+  "coursesId": [],
+  "inMinorId": [],
+  "outMinorId": [],
+  "withdrawId": [],
+  "dissertationId": [],
+  "selectUnitDemandId": [],
+  "viceChairId": null,
+  "chairManId": 5,
+  "isMaaref": true
+}

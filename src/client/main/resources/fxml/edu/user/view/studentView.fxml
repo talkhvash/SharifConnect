@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.edu.user.view.student.StudentViewFXML">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <HBox layoutX="300.0" layoutY="138.0" prefWidth="300.0">
+         <children>
+            <VBox prefHeight="333.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="firstNameField" alignment="CENTER" prefHeight="27.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="lastNameField" alignment="CENTER" prefHeight="27.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="departmentLabel" alignment="CENTER" prefWidth="200.0" text="تعیین نشده">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="nationalNumberField" alignment="CENTER" prefHeight="27.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="phoneNumberField" alignment="CENTER" prefHeight="27.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="emailField" prefHeight="27.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="yearBox" prefHeight="27.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="degreeBox" prefHeight="27.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <TextField fx:id="supervisorField" alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="randBox" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="111.0">
+               <children>
+                  <Label alignment="CENTER" ellipsisString="555555555" graphicTextGap="38.0" text="نام">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" ellipsisString="" graphicTextGap="38.0" text="نام خانوادگی">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="دانشکده">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="کدملی">
+                     <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="شماره موبایل">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="پست الکترونیک">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="سال ورود">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="مقطع">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="استاد راهنما">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="رند">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="saveButton" layoutX="305.0" layoutY="511.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="290.0" text="ثبت نام" />
+      <ImageView fx:id="image" fitHeight="100.0" fitWidth="100.0" layoutX="350.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="pictureChooserButton" layoutX="501.0" layoutY="73.0" mnemonicParsing="false" text="انتخاب عکس" />
+      <Label fx:id="pictureErrorLabel" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="77.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="firstNameError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="147.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="lastNameError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="184.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="nationalNumberError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="257.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="phoneNumberError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="295.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="emailError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="331.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="yearError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="368.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="degreeError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="405.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="supervisorError" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="442.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="randErrorLabel" alignment="CENTER_RIGHT" layoutX="95.0" layoutY="478.0" prefWidth="200.0" textFill="RED" />
+   </children>
+</AnchorPane>

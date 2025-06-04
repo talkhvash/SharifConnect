@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.edu.grade.list.vicechair.ViceChairGradeListFXML">
+   <children>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="900.0">
+         <children>
+            <Label fx:id="nameHeader" alignment="CENTER" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="nameHeader1" alignment="CENTER" prefWidth="300.0" text="اعتراض دانشجو">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="nameHeader2" alignment="CENTER" prefWidth="300.0" text="جوابیه استاد">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="nameHeader21" alignment="CENTER" prefWidth="50.0" text="نمره">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutY="40.0" prefHeight="450.0" prefWidth="900.0">
+         <content>
+            <VBox fx:id="box" prefWidth="884.0" />
+         </content>
+      </ScrollPane>
+      <VBox layoutX="492.0" layoutY="495.0" nodeOrientation="RIGHT_TO_LEFT">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT">
+               <children>
+                  <TextField fx:id="professorField" promptText="نام استاد" />
+                  <Button mnemonicParsing="false" onAction="#showProfessor" text="نمایش" />
+                  <ChoiceBox fx:id="courseBox" prefWidth="149.0" />
+                  <Button mnemonicParsing="false" onAction="#showCourse" text="نمایش" />
+               </children>
+            </HBox>
+            <HBox nodeOrientation="RIGHT_TO_LEFT">
+               <children>
+                  <TextField fx:id="studentIdField" promptText="شماره دانشجو" />
+                  <Button mnemonicParsing="false" onAction="#showStudentId" text="نمایش" />
+                  <TextField fx:id="studentNameField" promptText="نام دانشجو" />
+                  <Button mnemonicParsing="false" onAction="#showStudentName" text="نمایش" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

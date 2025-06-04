@@ -1,0 +1,33 @@
+{
+  "roomNumber": 0,
+  "level": "ASSOCIATE_PROFESSOR",
+  "chairman": true,
+  "viceChair": false,
+  "superVisorId": [],
+  "recommendId": [],
+  "id": 5,
+  "password": "5",
+  "firstName": "محمود",
+  "lastName": "محمودی",
+  "nationalNumber": 0,
+  "phoneNumber": 0,
+  "email": "as;dlmad",
+  "departmentId": 0,
+  "imageBase64": null,
+  "lastInterTime": {
+    "date": {
+      "year": 2022,
+      "month": 8,
+      "day": 22
+    },
+    "time": {
+      "hour": 20,
+      "minute": 57,
+      "second": 12,
+      "nano": 807000000
+    }
+  },
+  "passedCourseId": [],
+  "termCoursesId": [],
+  "chatsId": []
+}

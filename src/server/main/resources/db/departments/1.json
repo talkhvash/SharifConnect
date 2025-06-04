@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "name": "ریاضی",
+  "professorsId": [3],
+  "studentsId": [],
+  "coursesId": [],
+  "inMinorId": [],
+  "outMinorId": [],
+  "withdrawId": [],
+  "dissertationId": [],
+  "selectUnitDemandId": [],
+  "viceChairId": null,
+  "chairManId": 3,
+  "isMaaref": false
+}

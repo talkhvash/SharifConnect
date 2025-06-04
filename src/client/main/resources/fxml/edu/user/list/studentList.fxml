@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.edu.user.list.student.StudentListFXML">
+   <children>
+      <TabPane fx:id="tabPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="550.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="listTab" text="لیست">
+               <content>
+                  <Pane>
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="900.0">
+                           <children>
+                              <Label alignment="CENTER" prefWidth="200.0" text="نام دانشجو">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="شماره دانشجویی">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="مقطع">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="idField" onKeyPressed="#setRefresh" onKeyReleased="#setRefresh" onKeyTyped="#setRefresh" promptText="شماره دانشجو">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="218.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <ScrollPane layoutY="40.0" prefHeight="482.0" prefWidth="900.0">
+                           <content>
+                              <VBox fx:id="box" prefWidth="884.0" />
+                           </content></ScrollPane>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab fx:id="profileTab" text="پروفایل" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

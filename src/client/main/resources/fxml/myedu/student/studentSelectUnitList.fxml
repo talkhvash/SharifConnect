@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.myedu.student.StudentSelectUnitListFXML">
+   <children>
+      <TabPane fx:id="main" nodeOrientation="RIGHT_TO_LEFT" prefHeight="550.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" onSelectionChanged="#changeTab" text="بخش دانشکده ها">
+               <content>
+                  <Pane prefHeight="470.0" prefWidth="852.0">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="900.0">
+                           <children>
+                              <Label alignment="CENTER" prefWidth="50.0" text="گروه">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="نام درس">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="100.0" text="ظرفیت (اخذ شده)">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="100.0" text="مقطع">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="50.0" text="پیشنیاز">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="50.0" text="همنیاز">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="زمان امتحان">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ScrollPane layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="420.0" prefWidth="900.0">
+                           <content>
+                              <VBox fx:id="box1" alignment="CENTER" prefWidth="884.0" />
+                           </content>
+                        </ScrollPane>
+                        <ChoiceBox fx:id="departmentBox" layoutX="375.0" layoutY="466.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" />
+                        <Label layoutX="307.0" layoutY="470.0" text="نام دانشکده:" />
+                        <Label fx:id="errorLabel1" layoutX="630.0" layoutY="483.0" prefWidth="200.0" textFill="RED" />
+                        <ChoiceBox fx:id="sortBox" layoutX="375.0" layoutY="491.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" />
+                        <Label layoutX="293.0" layoutY="494.0" text="ترتیب بر اساس:" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+          <Tab fx:id="tab2" onSelectionChanged="#changeTab" text="لیست دروس پیشنهادی">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="900.0">
+                           <children>
+                              <Label alignment="CENTER" prefWidth="50.0" text="گروه">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="نام درس">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="100.0" text="ظرفیت (اخذ شده)">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="100.0" text="مقطع">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="50.0" text="پیشنیاز">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="50.0" text="همنیاز">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefWidth="150.0" text="زمان امتحان">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ScrollPane fx:id="box2" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="420.0" prefWidth="900.0">
+                           <content>
+                              <VBox fx:id="box11" alignment="CENTER" prefWidth="884.0" />
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="errorLabel2" layoutX="630.0" layoutY="484.0" prefWidth="200.0" textFill="RED" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

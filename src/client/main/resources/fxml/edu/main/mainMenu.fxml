@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.edu.main.menu.MainMenuFXML">
+   <children>
+      <MenuBar layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="900.0">
+        <menus>
+          <Menu fx:id="mainMenu" mnemonicParsing="false" text="صفحه اصلی">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goFirstPane" text="صفحه اصلی" />
+               </items></Menu>
+          <Menu fx:id="signupMenu" mnemonicParsing="false" text="امور ثبت نام">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goCoursesListPane" text="لیست دروس" />
+              <MenuItem mnemonicParsing="false" onAction="#goProfessorsListPane" text="لیست اساتید" />
+            </items>
+          </Menu>
+          <Menu fx:id="stateMenu" mnemonicParsing="false" text="خدمات آموزشی">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#goSchedulePane" text="برنامه هفتگی" />
+                  <MenuItem mnemonicParsing="false" onAction="#goExamsListPane" text="لیست امتحانات" />
+            </items>
+          </Menu>
+            <Menu fx:id="gradeMenu" mnemonicParsing="false" text="امور کارنامه">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#goGradesListPane" text="نمرات موقت" />
+                  <MenuItem mnemonicParsing="false" onAction="#goEducationalStatePane" text="وضعیت تحصیلی" />
+              </items>
+            </Menu>
+            <Menu fx:id="demandsMenu" mnemonicParsing="false" text="پیغام ها">
+              <items>
+                  <MenuItem fx:id="recommendMenuItem" mnemonicParsing="false" onAction="#goRecommendPane" text="درخواست توصیه نامه" />
+                <MenuItem fx:id="confirmationMenuItem" mnemonicParsing="false" onAction="#goConfirmationPane" text="درخواست گواهی اشتغال به تحصیل" />
+                  <MenuItem fx:id="dormMenuItem" mnemonicParsing="false" onAction="#goDormPane" text="درخواست خوابگاه" />
+                  <MenuItem fx:id="dissertationMenuItem" mnemonicParsing="false" onAction="#goDissertationPane" text="درخواست نوبت دفاع از پایان نامه" />
+                  <MenuItem fx:id="minorMenuItem" mnemonicParsing="false" onAction="#goMinorPane" text="درخواست ماینور" />
+                  <MenuItem fx:id="withdrawMenuItem" mnemonicParsing="false" onAction="#goWithdrawPane" text="درخواست انصراف از تحصیل" />
+                  <MenuItem fx:id="recommendListMenuItem" mnemonicParsing="false" onAction="#goRecommendListPane" text="درخواست های توصیه نامه" />
+                  <MenuItem fx:id="dissertationListMenuItem" mnemonicParsing="false" onAction="#goDissertationListPane" text="درخواست های نوبت دفاع از پایان نامه" />
+                  <MenuItem fx:id="minorListMenuItem" mnemonicParsing="false" onAction="#goMinorListPane" text="درخواست های ماینور" />
+                  <MenuItem fx:id="withdrawListMenuItem" mnemonicParsing="false" onAction="#goWithdrawListPane" text="درخواست های انصراف از تحصیل" />
+                  <MenuItem fx:id="stuSUDemandMenuItem" mnemonicParsing="false" onAction="#goSUDeamandsList" text="درخواست درس" />
+                  <MenuItem fx:id="proSUDemandMenuItem" mnemonicParsing="false" onAction="#goSUDemandsList" text="درخواست های درس" />
+              </items>
+            </Menu>
+            <Menu fx:id="profileMenu" mnemonicParsing="false" text="پروفایل کاربر">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goProfilePane" text="پروفایل کاربر" />
+               </items></Menu>
+            <Menu fx:id="newUserMenu" mnemonicParsing="false" text="ثبت کاربر جدید">
+              <items>
+                <MenuItem fx:id="newStudentMenuItem" mnemonicParsing="false" onAction="#goNewStudentView" text="ثبت دانشجو" />
+                  <MenuItem fx:id="newProfessorMenuItem" mnemonicParsing="false" onAction="#goNewProfessorView" text="ثبت استاد" />
+              </items>
+            </Menu>
+            <Menu fx:id="selectUnitMenu" mnemonicParsing="false" text="انتخاب واحد">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goSelectUnitPane" text="انتخاب واحد" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="پیام رسان">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goChatroom" text="پیام رسان" />
+               </items>
+            </Menu>
+            <Menu fx:id="mrMohseniMenu" mnemonicParsing="false" text="آقای محسنی">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goStudentsList" text="لیست دانشجویان" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label contentDisplay="CENTER" layoutX="820.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="80.0" text="سامانه آموزش">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <HBox prefHeight="25.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#exit" text="خروج" />
+            <Label fx:id="lastInterTimeLabel" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="150.0" />
+            <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" text="   آخرین ورود" textAlignment="RIGHT" />
+            <Label fx:id="timeLabel" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="150.0" />
+            <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" text="زمان جاری" textAlignment="RIGHT" />
+         </children>
+      </HBox>
+      <HBox fx:id="offlineBox" layoutX="614.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="114.0">
+         <children>
+            <Label text="آفلاین">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#reconnect" text="اتصال مجدد" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

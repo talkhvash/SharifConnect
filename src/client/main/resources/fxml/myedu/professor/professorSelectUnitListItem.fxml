@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.myedu.professor.ProfessorSelectUnitListItemFXML">
+   <children>
+      <Label fx:id="nameLabel" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" text="نام دانشجو">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="degreeLabel" alignment="CENTER" prefHeight="40.0" prefWidth="120.0" text="مقطع">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="yearLabel" alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="سال">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="randLabel" alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="رند">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="timeLabel" alignment="CENTER" prefHeight="40.0" prefWidth="150.0" text="زمان انتخاب رشته">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</HBox>

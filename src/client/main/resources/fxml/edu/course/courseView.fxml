@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.edu.course.view.CourseViewFXML">
+   <children>
+      <HBox layoutX="568.0" layoutY="12.0" prefWidth="300.0" scaleZ="2.0">
+         <children>
+            <VBox nodeOrientation="RIGHT_TO_LEFT" prefWidth="203.0">
+               <children>
+                  <TextField fx:id="nameField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="departmentLabel" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="200.0" text="تعیین نشده">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="numberField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="unitBox" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="200.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="degreeBox" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <TextField fx:id="pishniazField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="hamniazField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="capacityField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="examDate" prefHeight="27.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="ساعت">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="examHourField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="دقیقه">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="examMinuteField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <MenuButton alignment="CENTER" minHeight="27.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefWidth="200.0" text="روزها">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <items>
+                              <CheckMenuItem fx:id="saturday" mnemonicParsing="false" text="شنبه" />
+                              <CheckMenuItem fx:id="sunday" mnemonicParsing="false" text="یکشنبه" />
+                              <CheckMenuItem fx:id="monday" mnemonicParsing="false" text="دوشنبه" />
+                              <CheckMenuItem fx:id="tuesday" mnemonicParsing="false" text="سه شنبه" />
+                              <CheckMenuItem fx:id="thursday" mnemonicParsing="false" text="چهار شنبه" />
+                              <CheckMenuItem fx:id="wednesday" mnemonicParsing="false" text="پنج شنبه" />
+                           </items>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="ساعت">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="startHourField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="دقیقه">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="startMinuteField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="ساعت">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="endHourField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="دقیقه">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="endMinuteField" minHeight="-Infinity" prefWidth="51.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="groupField" prefHeight="27.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="118.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="27.0" text="نام درس">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" text="نام دانشکده">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="شماره درس">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="واحد">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" text="مقطع">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" text="پیشنیاز">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="همنیاز">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="ظرفیت">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="زمان پایان ترم">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="برنامه هفتگی">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" text="شروع:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="27.0" text="پایان:">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" text="گروه">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="48.0" layoutY="32.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="250.0">
+         <children>
+            <VBox>
+               <children>
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addProfessor" prefWidth="50.0" text="افزودن" />
+                        <Button mnemonicParsing="false" onAction="#removeProfessor" prefWidth="50.0" text="حذف" />
+                        <TextField fx:id="professorIdField" prefWidth="150.0" promptText="شماره استادی" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="professorErrorLabel" alignment="CENTER" prefWidth="500.0" textFill="RED">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefWidth="500.0" text="اساتید:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <VBox fx:id="professorBox" />
+               </children>
+            </VBox>
+            <VBox fx:id="TABox">
+               <children>
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addAssistant" prefWidth="50.0" text="افزودن" />
+                        <Button mnemonicParsing="false" onAction="#removeAssistant" prefWidth="50.0" text="حذف" />
+                        <TextField fx:id="assistantIdField" promptText="شماره دانشجویی" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="assistantErrorLabel" prefWidth="500.0" textFill="RED">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefWidth="500.0" text="دستیاران اساتید:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <VBox fx:id="assistantBox" />
+               </children>
+            </VBox>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="381.0" text="ذخیره">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="nameErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="21.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="numberErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="95.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="unitErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="132.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="degreeErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="169.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="pishniazErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="205.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="hamniazErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="242.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="capacityErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="279.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="examDateErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="316.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="examTimeErrorLabel" alignment="CENTER_RIGHT" layoutX="364.0" layoutY="352.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="daysErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="390.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="startTimeErrorLabel" alignment="CENTER_RIGHT" layoutX="364.0" layoutY="426.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="endTimeErrorLabel" alignment="CENTER_RIGHT" layoutX="364.0" layoutY="462.0" prefWidth="200.0" textFill="RED" />
+      <Label fx:id="groupErrorLabel" alignment="CENTER_RIGHT" layoutX="363.0" layoutY="500.0" prefWidth="200.0" textFill="RED" />
+   </children>
+</AnchorPane>

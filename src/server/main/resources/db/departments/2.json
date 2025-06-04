@@ -1,0 +1,15 @@
+{
+  "id": 2,
+  "name": "فیزیک",
+  "professorsId": [4],
+  "studentsId": [],
+  "coursesId": [],
+  "inMinorId": [],
+  "outMinorId": [],
+  "withdrawId": [],
+  "dissertationId": [],
+  "selectUnitDemandId": [],
+  "viceChairId": null,
+  "chairManId": 4,
+  "isMaaref": false
+}

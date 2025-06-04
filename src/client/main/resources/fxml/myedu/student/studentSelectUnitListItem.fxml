@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="box" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.main.java.view.FXML.myedu.student.StudentSelectUnitListItemFXML">
+   <children>
+      <Label fx:id="groupLabel" alignment="CENTER" prefWidth="50.0" text="گروه">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" left="15.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="nameLabel" alignment="CENTER" prefWidth="150.0" text="نام درس">
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="capacityLabel" alignment="CENTER" prefWidth="100.0" text="ظرفیت (اخذ شده)">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="degreeLabel" alignment="CENTER" prefWidth="100.0" text="مقطع">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="pishniazLabel" alignment="CENTER" prefWidth="50.0" text="پیشنیاز">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="hamniazLabel" alignment="CENTER" prefWidth="50.0" text="همنیاز">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="examDateTimeLabel" alignment="CENTER" prefWidth="150.0" text="زمان امتحان">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Button fx:id="signButton" mnemonicParsing="false" onAction="#changeSign" text="نشان دار کردن">
+         <HBox.margin>
+            <Insets top="5.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <HBox fx:id="addBox">
+         <children>
+            <Button mnemonicParsing="false" onAction="#add" text="اخذ">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#demandCourse" text="درخواست اخذ">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="deleteBox">
+         <children>
+            <Button mnemonicParsing="false" onAction="#delete" text="حذف">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#changeGroup" text="تغییر گروه">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</HBox>
